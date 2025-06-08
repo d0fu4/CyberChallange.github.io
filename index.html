@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Хакатон CyberChallenge</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="particles-js"> </div>
+<header>
+  <div class="container nav-container">
+    <div class="logo-block">
+      <img src="images/logo.png" alt="Логотип" width="50" height="50" />
+      <div class="logo">CyberChallange</div>
+    </div>
+    <nav class="nav">
+      <a href="#main" class="active">Главная</a>
+      <a href="#about">О нас</a>
+      <a href="#register">Зарегистрироваться</a>
+    </nav>
+  </div>
+</header>
+
+
+<section class="hero" id="main">
+  
+
+  <div class="container hero-content">
+    <h1>Добро пожаловать на Хакатон CyberChallenge</h1>
+    <p>Прими участие в Хакатоне и стань частью цифрового будущего!</p>
+    <a href="#register" class="btn">Попробовать</a>
+  </div>
+</section>
+
+<section class="service">
+  <div class="servise-card">
+    <h3>Аудит и безопасность</h3>
+    <p>Обучение и оценка знаний от экспертов</p>
+  </div>
+  <div class="servise-card">
+    <h3>Соревнования</h3>
+    <p>Реальные задачи и призы от нашей организации</p>
+  </div>
+  <div class="servise-card">
+    <h3>Онлайн и офлайн уроки</h3>
+    <p>Наши эксперты проводят уроки по темам хакатона</p>
+  </div>
+</section>
+
+
+<section class="mission" id="about">
+  <div class="container">
+    <h1>Наша миссия</h1>
+    <p>
+      CyberChallenge —  хакатон, который объединяет лучших молодых специалистов в области кибербезопасности. Мы создаём платформу для обмена знаниями, практики и карьерного роста в мире кибертехнологий
+    </p>
+  </div>
+</section>
+
+<section class="team">
+  <div class="container">
+    <h2 class="section-title">Наша команда</h2>
+    <div class="team-grid">
+
+      <div class="team-member">
+        <img src="images/ya.jpg" alt="Демир — организатор" class="team-photo">
+        <h3>Демир Иванов</h3>
+        <ul class="ulstyle">
+          <li>Главный организатор и координатор проекта</li>
+          <li>rr yvl botakara</li>
+        </ul>
+        <p><a href="https://instagram.com/i.dxfx" target="_blank" class="colorinst">@i.dxfx</a></p>
+      </div>
+
+      <div class="team-member">
+        <img src="images/fototeam2.jpg" alt="Адиль — наставник" class="team-photo">
+        <h3>Шармонин Пётр</h3>
+        <ul class="ulstyle">
+          <li>Эксперт по кибербезопасности, наставник CTF</li>
+          <li>Любит разноцветные галоши, называет это стилем</li>
+        </ul>
+        <p><a href="https://instagram.com/_n3ks1337_" target="_blank" class="colorinst">@_n3ks1337_</a></p>
+      </div>
+
+      <div class="team-member">
+        <img src="images/fototeam3.jpg" alt="Рамиль — дизайнер" class="team-photo">
+        <h3>Гилимьянов Рамиль</h3>
+        <ul class="ulstyle">
+          <li>UI/UX-дизайнер и визуальный стратег</li>
+          <li>зелебобка</li>
+        </ul>
+        <p><a href="https://instagram.com/mishapluxury" target="_blank" class="colorinst">@mishapluxury</a></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="achievements">
+  <div class="container">
+    <h2>Наши достижения</h2>
+    <ul>
+      <li>Проведено 5 международных хакатонов</li>
+      <li>Участие более 100 команд из 10 стран</li>
+      <li>Партнёрство с топовыми ИТ-компаниями</li>
+    </ul>
+    <div class="slideshow-container">
+    <img src="images/img1.jpg" class="slide active">
+    <img src="images/img2.jpg" class="slide">
+    <img src="images/img3.jpg" class="slide">
+    <img src="images/img4.jpg" class="slide">
+  </div>
+  </div>
+</section>
+
+
+<section class="registration-form" id="register">
+  <div class="container">
+    <h1>Форма регистрации</h1>
+    <form id="regForm">
+      <div>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required minlength="8" />
+      </div>
+
+      <div>
+        <label for="confirm">Подтверждение пароля:</label>
+        <input type="password" id="confirm" name="confirm" required minlength="8" />
+      </div>
+
+      <div>
+        <label for="service">Тип услуги:</label>
+        <select id="service" name="service" required>
+          <option value="">-- Выберите --</option>
+          <option value="audit">Аудит</option>
+          <option value="training">Обучение</option>
+          <option value="competition">Соревнования</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn">Зарегистрироваться</button>
+    </form>
+
+    <div id="message"></div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container footer-content">
+    <p>&copy; "ООО"ГАДДЕМ 2025 CyberChallenge. Все права не защищены</p>
+    <p>Email: fordemir777@gmail.com</p>
+    <p><a href="https://instagram.com/i.dxfx" target="_blank">@i.dxfx</a></p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
